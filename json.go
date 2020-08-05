@@ -22,7 +22,7 @@ func main() {
 	//instanciando dados p/criar um json
 	s.Servers = append(s.Servers, Server{ServerName: "Shangai_VPN", ServerIP: "127.0.0.1"})
 	s.Servers = append(s.Servers, Server{ServerName: "Beijing_VPN", ServerIP: "127.0.0.2"})
-	//criando um json com dados intanciados de s.servers
+	//criando um json com dados instanciados de s.servers
 	sjson, err := json.Marshal(s)
 	if err != nil {
 		fmt.Println("json err:", err)
